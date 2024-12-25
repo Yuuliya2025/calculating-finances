@@ -20,16 +20,13 @@ import org.junit.jupiter.api.Assertions;
 
         @Test
         void shouldFindMaxWhenArrayContainsNegativeNumbers() {
-            // Arrange
+            
             long[] incomesInBillions = {-12, -5, -8, -4, -5, -3, -8, -6, -11, -11, -12};
             long expected = -3;
-
-            // Act
             long actual = new StatisticsService().findMax(incomesInBillions);
             Assertions.assertEquals(expected, actual);
 
-            // Assert
-
+           
         }
     }
 
